@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundvagn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-2dtstDgUv8f+jCxhJH0edilzzeQQkcOTDW/AyW/XHlX2mqXa/+0XKzmUuRdq9m9y/soLLbL1P/voEbSyLslGkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <h1>Din Kundvagn</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="cart.html">Kundvagn</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="cart">
+            <h2>Produkter i kundvagnen</h2>
+            <div id="cart-items"></div>
+            <h3 id="total-price">Totalt pris: 0 SEK</h3>
+            <button onclick="checkout()">Gå till kassan</button>
+            <button onclick="clearCart()">Rensa varukorgen</button> <!-- Knapp för att rensa varukorgen -->
+
+            <!-- Placera PayPal Checkout-knappen här -->
+            <div id="paypal-button-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/din-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/din-facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/din-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Konstgalleriet. Alla rättigheter förbehållna.</p>
+    </footer>
+    
+    <script src="https://www.paypal.com/sdk/js?client-id=4FUDXXMWHYJC6"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstgalleri</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Länk till Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-2dtstDgUv8f+jCxhJH0edilzzeQQkcOTDW/AyW/XHlX2mqXa/+0XKzmUuRdq9m9y/soLLbL1P/voEbSyLslGkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Sandra Allards Konstgalleri</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="cart.html">Kundvagn</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="gallery">
+            <div class="art-piece">
+                <img src="images/0_riittaako_puhelimella_otetun_kuvan_koko_tauluun.jpg" alt="Tavla 1">
+                <h3>Tavla 1</h3>
+                <p>Beskrivning av Tavla 1</p>
+                <button onclick="addToCart('Tavla 1', 1000)">Köp</button>
+            </div>
+            <div class="art-piece">
+                <img src="images/5223736780_9abe61526b_c.jpg" alt="Tavla 1">
+                <h3>Tavla 1</h3>
+                <p>Beskrivning av Tavla 1</p>
+                <button onclick="addToCart('Tavla 1', 1000)">Köp</button>
+            </div>
+            <div class="art-piece">
+                <img src="images/5615271991_c298563439_c.jpg" alt="Tavla 1">
+                <h3>Tavla 1</h3>
+                <p>Beskrivning av Tavla 1</p>
+                <button onclick="addToCart('Tavla 1', 1000)">Köp</button>
+            </div>
+            <div class="art-piece">
+                <img src="images/fotokollage_mittpunkt-samma-niva.jpg" alt="Tavla 1">
+                <h3>Tavla 1</h3>
+                <p>Beskrivning av Tavla 1</p>
+                <button onclick="addToCart('Tavla 1', 1000)">Köp</button>
+            </div>
+            <div class="art-piece">
+                <img src="images/fotokollage_pa_vaggen.jpg" alt="Tavla 1">
+                <h3>Tavla 1</h3>
+                <p>Beskrivning av Tavla 1</p>
+                <button onclick="addToCart('Tavla 1', 1000)">Köp</button>
+            </div>
+            <div class="art-piece">
+                <img src="images/vacker_inredningstavla_av_brollopsdagen_bilder.jpg" alt="Tavla 1">
+                <h3>Tavla 1</h3>
+                <p>Beskrivning av Tavla 1</p>
+                <button onclick="addToCart('Tavla 1', 1000)">Köp</button>
+            </div>
+            <!-- Fortsätt med resten av dina tavlor -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <!-- Font Awesome ikoner för Instagram, Facebook och Twitter -->
+            <a href="https://www.instagram.com/din-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/din-facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/din-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Konstgalleriet. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=4FUDXXMWHYJC6"></script>
+    <script src="script.js"></script>
+</body>
+</html>
